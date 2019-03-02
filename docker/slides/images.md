@@ -1,7 +1,6 @@
-# Hacker Slides - Für Andrea
+# Hacker Slides
 
 ### Hack together simple slides
-### This is for Gidder T.
 
 <!-- .slide: data-transition="zoom" -->
 
@@ -23,6 +22,10 @@ class Test {
     
 }
 ```
+---
+<!-- the best way to include an iframe w/ wetty -->
+<section data-background-iframe="/wetty/"  data-background-interactive>
+</section>
 
 ---
 

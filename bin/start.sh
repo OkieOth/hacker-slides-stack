@@ -5,7 +5,7 @@ scriptPos=${0%/*}
 source $scriptPos/stackConf.sh
 
 if [ -z "$REMOTE_SSH_SERVER" ]; then
-    read -r "SSH server to use, empty for localhost: " REMOTE_SSH_SERVER
+    read -r -p "SSH server to use, empty for localhost: " REMOTE_SSH_SERVER
 fi
 
 if [ -z "$REMOTE_SSH_SERVER" ]; then
