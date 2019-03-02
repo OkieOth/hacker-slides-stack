@@ -1,0 +1,15 @@
+.idea
+*.iml
+.gradle
+.ng_pkg_build
+build
+target
+gradle
+tmp
+classes
+*.log
+*.swp
+*.bak
+*.tgz
+*.zip
+*.7z

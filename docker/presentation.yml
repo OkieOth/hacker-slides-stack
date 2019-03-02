@@ -1,0 +1,21 @@
+version: '3.2'
+services:
+    proxy:
+        image: nginx:1.15.8-alpine
+        volumes:
+            - "./proxyConf:/etc/nginx/conf.d"
+        ports:
+            - 80:80
+        depends_on:
+            - slides
+            - wetty
+    slides:
+        image: msoedov/hacker-slides        
+        volumes:
+            - ./slides:/app/slides
+    wetty:
+        image: svenihoney/wetty
+        environment:
+            - REMOTE_SSH_SERVER=${REMOTE_SSH_SERVER}
+            - REMOTE_SSH_PORT=${REMOTE_SSH_PORT}
+            - REMOTE_SSH_USER=${REMOTE_SSH_USER}
